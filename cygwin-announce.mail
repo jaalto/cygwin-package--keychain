@@ -1,25 +1,32 @@
 To: cygwin-announce@cygwin.com
-Subject: Updated: package N.N
-Subject: New package: package N.N -- decription
+Subject: Updated: keychain 2.7.1-1 -- Key manager for OpenSSH
 --text follows this line--
 
 PACKAGE DESCRIPTION
 ===================
 
-Homepage:
+Homepage: https://github.com/funtoo/keychain
 License : GPL
 
-<write description here>
+Keychain is an OpenSSH key manager, typically run from
+~/.bash_profile. When keychain is run, it checks for a running
+ssh-agent, otherwise it starts one. It saves the ssh-agent environment
+variables to ~/.keychain/$HOSTNAME-sh, so that subsequent logins
+and non-interactive shells such as cron jobs can source the file and
+make passwordless ssh connections. In addition, when keychain runs, it
+verifies that the key files specified on the command-line are known to
+ssh-agent, otherwise it loads them, prompting you for a password if
+necessary.
 
 CHANGES SINCE LAST RELEASE
 ==========================
 
-<Add this section if this is update>
+See homepage for changes.
 
 INSTALL OR UPGRADE NOTES
 ========================
 
-<if anything to watch out>
+Standard install.
 
 CYGWIN INSTALLATION INFORMATION
 ===============================
