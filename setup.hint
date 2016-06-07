@@ -1,3 +1,4 @@
+# ARCH=noarch
 sdesc: "Key manager for OpenSSH"
 ldesc: "Keychain is an OpenSSH key manager, typically run from
 ~/.bash_profile. When keychain is run, it checks for a running
