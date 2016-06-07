@@ -1,2 +1,2 @@
 tag1: keychain
-  http://packages.debian.org/unstable/keychain pregexp:orig.tar.gz file:keychain_2.7.1.orig.tar.gz new: x:
+  http://packages.debian.org/unstable/keychain pregexp:tar.gz file:keychain_2.7.1.tar.gz new: x:
